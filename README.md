@@ -60,18 +60,8 @@ This is the frontend application for the Employee HRM system built with React an
 
 ## Adding UI Screenshots
 
-To enhance this README with UI screenshots:
+![image](https://github.com/user-attachments/assets/da2534b4-8d4d-40ab-80b5-aa4b2be7433a)
 
-1. Run the frontend development server (`npm run dev`).
-2. Open the app in your browser at `http://localhost:5173`.
-3. Navigate to the pages you want to capture (Dashboard, Employee List, Add Employee Form).
-4. Use your operating system's screenshot tool to capture images of the UI.
-5. Save the images in the `public` folder (e.g., `public/dashboard.png`).
-6. Add image references in this README using markdown syntax, for example:
-
-   ```markdown
-   ![Dashboard](./public/dashboard.png)
-   ```
 
 ## Troubleshooting
 
