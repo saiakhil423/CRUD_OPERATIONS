@@ -59,7 +59,7 @@ This is the frontend application for the Employee HRM system built with React an
 - Skills are entered as comma-separated values.
 
 ## Adding UI Screenshots
-
+![image](https://github.com/user-attachments/assets/d920fa75-7b00-423b-b982-55aa8e315236)
 ![image](https://github.com/user-attachments/assets/da2534b4-8d4d-40ab-80b5-aa4b2be7433a)
 
 
