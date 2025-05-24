@@ -12,11 +12,7 @@ This is the backend service for the Jala Academy project, built with Django and 
 
 1. Clone the repository to your local machine.
 
-2. Navigate to the project directory:
-
-   ```bash
-   cd c:/Users/SAI AKHIL/Desktop/JalaAcademyTask/Backend/jalaBackend
-   ```
+2. Navigate to the project directory
 
 3. (Optional) Create and activate a virtual environment:
 
@@ -29,12 +25,6 @@ This is the backend service for the Jala Academy project, built with Django and 
    ```
 
 4. Install the required Python packages:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-   > Note: If `requirements.txt` is not present, you can install Django and Django REST Framework manually:
 
    ```bash
    pip install django djangorestframework djangorestframework-simplejwt django-cors-headers
