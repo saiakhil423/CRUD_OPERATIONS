@@ -1,0 +1,39 @@
+<h2>Employee List</h2>
+<a href="{% url 'employee-create' %}">Add Employee</a>
+<table border="1">
+    <tr>
+        <th>Full Name</th>
+        <th>Email</th>
+        <th>Mobile</th>
+        <th>Gender</th>
+        <th>DOB</th>
+        <th>Address</th>
+        <th>Country</th>
+        <th>City</th>
+        <th>Skills</th>
+        <th>Actions</th>
+    </tr>
+    {% for emp in employees %}
+    <tr>
+        <td>{{ emp.first_name }} {{ emp.last_name }}</td>
+        <td>{{ emp.email }}</td>
+        <td>{{ emp.mobile }}</td>
+        <td>{{ emp.get_gender_display }}</td>
+        <td>{{ emp.date_of_birth }}</td>
+        <td>{{ emp.address }}</td>
+        <td>{{ emp.country }}</td>
+        <td>{{ emp.city }}</td>
+        <td>
+            {% for skill in emp.skills %}
+                {{ skill }}{% if not forloop.last %}, {% endif %}
+            {% endfor %}
+        </td>
+        <td>
+            <a href="{% url 'employee-edit' emp.pk %}">Edit</a> |
+            <a href="{% url 'employee-delete' emp.pk %}">Delete</a>
+        </td>
+    </tr>
+    {% empty %}
+    <tr><td colspan="10">No employees found.</td></tr>
+    {% endfor %}
+</table>
